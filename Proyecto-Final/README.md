@@ -1,6 +1,7 @@
 # Explorador de IMDb
 
 Este proyecto busca democratizar el análisis de datos cinematográficos, ofreciendo una perspectiva clara y dinámica para que cualquier persona pueda navegar por el universo de IMDb con mayor facilidad y obtener ideas para sus próximas noches de entretenimiento.
+Todo esto este proyecto se llevo a cabo gracias a las Bases de Datos gratuitas que proporciona la pagína IMDb.
 
 ## Características
 - Explorador de Calificaiones y Titulos destacados.
