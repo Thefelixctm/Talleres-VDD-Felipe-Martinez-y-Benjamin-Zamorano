@@ -21,12 +21,6 @@ Antes de instalar, asegúrese de tener:
 https://drive.google.com/file/d/1bMSXbfaOHwbSeU6RhnLFUCpJUUHbZ7am/view?usp=sharing
 ```
 
-```bash
-cd ~
-git clone https://github.com/thevoxium/VeriSim.git
-cd VeriSim
-```
-
 2. Vaya a la carpeta donde descomprimio el repositorio y proceda a instalar los paquetes necesarios:
 ```bash
 pip install -r requirements.txt
