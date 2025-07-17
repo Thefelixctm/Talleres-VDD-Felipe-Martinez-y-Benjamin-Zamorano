@@ -24,7 +24,7 @@ title_episode = pd.concat([ep1, ep2, ep3], ignore_index=True)
 # --- Configuración de la página ---
 st.set_page_config(
     page_title="IMDb: Episodios por Temporada",
-    page_icon="images/IMDB_Logo_2016.svg.png", # Asegúrate de que la ruta sea correcta
+    page_icon="images/IMDB_Logo_2016.png", # Asegúrate de que la ruta sea correcta
     layout="wide"
 )
 
@@ -37,7 +37,7 @@ def load_css(file_name):
         st.sidebar.warning(f"Archivo CSS '{file_name}' no encontrado. No se aplicará estilo personalizado.")
 
 load_css("style.css") # Asegúrate de que style.css esté en la misma carpeta
-st.sidebar.image("images/IMDB_Logo_2016.svg.png", width=280) # Asegúrate de que la ruta sea correcta
+st.sidebar.image("images/IMDB_Logo_2016.png", width=280) # Asegúrate de que la ruta sea correcta
 st.sidebar.markdown("---")
 st.sidebar.markdown("¡Explora más en la [Página Oficial de IMDb](https://www.imdb.com/)!")
 st.sidebar.markdown("---")
