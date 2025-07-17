@@ -6,17 +6,18 @@ import plotly.express as px
 import plotly.graph_objects as go
 import os
 
-im1 = pd.read_csv('data/imdb_episodios_parte1.csv')
-im2 = pd.read_csv('data/imdb_episodios_parte2.csv')
-im3 = pd.read_csv('data/imdb_episodios_parte3.csv')
-im4 = pd.read_csv('data/imdb_episodios_parte4.csv')
-im5 = pd.read_csv('data/imdb_episodios_parte5.csv')
+data_path = os.path.join(os.path.dirname(__file__), "..", "data")
+im1 = pd.read_csv(os.path.join(data_path, "imdb_episodios_parte1.csv"))
+im2 = pd.read_csv(os.path.join(data_path, "imdb_episodios_parte2.csv"))
+im3 = pd.read_csv(os.path.join(data_path, "imdb_episodios_parte3.csv"))
+im4 = pd.read_csv(os.path.join(data_path, "imdb_episodios_parte4.csv"))
+im5 = pd.read_csv(os.path.join(data_path, "imdb_episodios_parte5.csv"))
 # Unir todos los DataFrames en uno solo
 imdb_episodios = pd.concat([im1, im2, im3, im4, im5], ignore_index=True)
 
-ep1 = pd.read_csv('data/title_parte1.tsv', sep='\t')
-ep2 = pd.read_csv('data/title_parte2.tsv', sep='\t')
-ep3 = pd.read_csv('data/title_parte3.tsv', sep='\t')
+ep1 = pd.read_csv(os.path.join(data_path, "title_parte1.tsv"))
+ep2 = pd.read_csv(os.path.join(data_path, "title_parte2.tsv"))
+ep3 = pd.read_csv(os.path.join(data_path, "title_parte3.tsv"))
 # Unir todos los DataFrames en uno solo
 title_episode = pd.concat([ep1, ep2, ep3], ignore_index=True)
 
