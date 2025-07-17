@@ -3,16 +3,14 @@ import pandas as pd
 import os
 
 # --- Construcción segura de ruta para la imagen ---
-image_path = os.path.join(os.path.dirname(__file__), "images", "IMDB_Logo_2016.svg.png")
+image_path = os.path.join(os.path.dirname(__file__), "images", "IMDB_Logo_2016.png")
 
 # --- Configuración de la página principal ---
-with open(image_path, "rb") as icon:
-    st.set_page_config(
-        page_title="Explorador General IMDb",
-        page_icon=icon,
-        layout="wide",
-        initial_sidebar_state="expanded"
-    )
+st.set_page_config(
+    page_title="Explorador General IMDb",
+    page_icon=image_path,
+    layout="wide"
+)
 
 # --- Función para cargar el CSS ---
 def load_css(file_name):
@@ -25,8 +23,7 @@ def load_css(file_name):
 load_css("style.css")
 
 # --- Imagen central ---
-with open(image_path, "rb") as img_file:
-    st.image(img_file, width=450)
+st.image(image_path, width=450)
 
 # --- Título y descripción ---
 st.title("Bienvenido al Explorador de IMDb")
@@ -63,7 +60,6 @@ Aquí podrás encontrar:
 """)
 
 # --- Imagen lateral ---
-with open(image_path, "rb") as sidebar_logo:
-    st.sidebar.image(sidebar_logo, width=280)
+st.sidebar.image(image_path, width=280)
 
 st.sidebar.markdown("¡Explora más en la [Página Oficial de IMDb](https://www.imdb.com/)!")
