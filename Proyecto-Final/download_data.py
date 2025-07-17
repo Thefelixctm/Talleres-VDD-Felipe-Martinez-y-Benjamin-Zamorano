@@ -9,23 +9,23 @@ def descargar_archivos():
 
     archivos = [
         {
-            "url": "https://drive.google.com/uc?id=1Pb8CFXazZQ4zLOPW_BLFyFiBKGawvoU3",
+            "url": "https://drive.google.com/uc?id=1iJqgnN7y9_r82Wr-UT_efGhSFuIF0qWP",
             "nombre": "imdb_dataset.csv"
         },
         {
-            "url": "https://drive.google.com/uc?id=1ex1ucXsqtpCV4pFitiaO9oeD9zspUadF",
+            "url": "https://drive.google.com/uc?id=1RKrL7Bd_qyINZT0mAaCOiXNPShtxUl6Q",
             "nombre": "imdb_episodios.csv"
         },
         {
-            "url": "https://drive.google.com/uc?id=1MA7_9Kw5f6eIkS90PV4T39UPNy0x3CRS",
+            "url": "https://drive.google.com/uc?id=1s3TkbU_wEUdhEf30nGDx_RZj1g5E0HgP",
             "nombre": "title.basics.tsv"
         },
         {
-            "url": "https://drive.google.com/uc?id=12ntBwyiGHRI6r0KhYRQ1AJ2wtj3gUZn0",
+            "url": "https://drive.google.com/uc?id=102-W0uUUU7Y0O7UfXsj3zSnYhcahOAQA",
             "nombre": "title.episode.tsv"
         },
         {
-            "url": "https://drive.google.com/uc?id=1klytyFnwldFyvkHPKUg-cmJjxBKOZ9l7",
+            "url": "https://drive.google.com/uc?id=1zSVm9X-R7e3mYFy2MgID53Gs9DGq56h7",
             "nombre": "title.ratings.tsv"
         },
     ]
