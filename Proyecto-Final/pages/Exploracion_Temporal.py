@@ -5,7 +5,7 @@ import plotly.express as px
 # --- Configuración de la página ---
 st.set_page_config(
     page_title="IMDb: Exploración Temporal",
-    page_icon="images/IMDB_Logo_2016.svg.png",
+    page_icon="images/IMDB_Logo_2016.png",
     layout="wide"
 )
 
@@ -16,7 +16,7 @@ def load_css(file_name):
 load_css("style.css")
 
 # Luego, el enlace a IMDb
-st.sidebar.image("images/IMDB_Logo_2016.svg.png", width=280) # Ajusta el 'width' según necesites
+st.sidebar.image("images/IMDB_Logo_2016.png", width=280) # Ajusta el 'width' según necesites
 st.sidebar.markdown("¡Explora más en la [Página Oficial de IMDb](https://www.imdb.com/)!")
 
 # --- Función para cargar los datos (con caché para eficiencia) ---
