@@ -12,9 +12,11 @@ st.set_page_config(
 
 # Función para cargar el CSS
 def load_css(file_name):
-    # ¡IMPORTANTE! Especificar la codificación 'utf-8' al abrir el archivo
-    with open(file_name, encoding="utf-8") as f:
+    current_dir = os.path.dirname(os.path.abspath(__file__))  # ruta absoluta del script actual
+    file_path = os.path.join(current_dir, file_name)          # une la ruta con el nombre del archivo
+    with open(file_path, encoding="utf-8") as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 
 # Llama a la función para cargar tu archivo CSS
 load_css("style.css")
