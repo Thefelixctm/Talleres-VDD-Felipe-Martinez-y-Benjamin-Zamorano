@@ -1,6 +1,7 @@
 # Dashboard_IMDb.py (en la raíz de tu proyecto)
 import streamlit as st
 import pandas as pd
+import os
 
 # --- Configuración de la página principal ---
 st.set_page_config(
