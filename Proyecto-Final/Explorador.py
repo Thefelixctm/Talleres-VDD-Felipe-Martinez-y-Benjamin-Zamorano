@@ -18,14 +18,16 @@ def load_css(file_name):
     with open(file_path, encoding="utf-8") as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-
 # Llama a la función para cargar tu archivo CSS
 load_css("style.css")
 
+# Obtener ruta absoluta hacia la imagen desde cualquier parte del proyecto
+image_path = os.path.join(os.path.dirname(__file__), "images", "IMDB_Logo_2016.svg.png")
+image_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "images", "IMDB_Logo_2016.svg.png"))
 
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2: # Coloca el contenido en la columna del medio
-    st.image("images/IMDB_Logo_2016.svg.png", width=450)
+# Mostrar la imagen
+st.image(image_path, width=450)
+
 
 st.title("Bienvenido al Explorador de IMDb")
 
