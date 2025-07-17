@@ -6,7 +6,7 @@ import plotly.express as px
 # --- Configuración de la página ---
 st.set_page_config(
     page_title="IMDb: Calificaciones y Títulos Destacados",
-    page_icon="images/IMDB_Logo_2016.svg.png", # Asegúrate de que la ruta de la imagen sea correcta
+    page_icon="images/IMDB_Logo_2016.png", # Asegúrate de que la ruta de la imagen sea correcta
     layout="wide"
 )
 
@@ -16,7 +16,7 @@ def load_css(file_name):
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 load_css("style.css")
-st.sidebar.image("images/IMDB_Logo_2016.svg.png", width=280)
+st.sidebar.image("images/IMDB_Logo_2016.png", width=280)
 st.sidebar.markdown("¡Explora más en la [Página Oficial de IMDb](https://www.imdb.com/)!")
 
 # --- Función para cargar los datos (con caché para eficiencia) ---
