@@ -1,6 +1,11 @@
 # Dashboard_IMDb.py (en la raíz de tu proyecto)
 import streamlit as st
 import pandas as pd
+from download_data import descargar_archivos
+
+# Llamada al inicio
+descargar_archivos()
+
 
 # --- Configuración de la página principal ---
 st.set_page_config(
