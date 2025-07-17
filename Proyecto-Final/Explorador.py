@@ -21,12 +21,8 @@ def load_css(file_name):
 # Llama a la función para cargar tu archivo CSS
 load_css("style.css")
 
-# Obtener ruta absoluta hacia la imagen desde cualquier parte del proyecto
-image_path = os.path.join(os.path.dirname(__file__), "images", "IMDB_Logo_2016.svg.png")
-image_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "images", "IMDB_Logo_2016.svg.png"))
-
-# Mostrar la imagen
-st.image(image_path, width=450)
+with open("images/IMDB_Logo_2016.svg.png", "rb") as img_file:
+    st.image(img_file, width=450)
 
 
 st.title("Bienvenido al Explorador de IMDb")
