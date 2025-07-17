@@ -1,2 +1,5 @@
 streamlit==1.39.0
 pandas
+plotly.express
+plotly.graph_objects
+os
